@@ -9,17 +9,26 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    
 }
 
 header{
-    height: 100vh;
-    width: 100vw;
     background-color: #fefefe;
     background-size: cover;
+    /*background-image: url('../img/4.jpg'); */
+   
+}
+
+.imageprincipale
+{
+    height: 100vh;
+    width: 100vw;
+    z-index: 1 ;
+    padding-top: 8%;   
 }
 
 .navbar{
-    position: absolute;
+    position:fixed ;
     padding: 50px;
     display: flex;
     justify-content: space-between;
@@ -49,14 +58,19 @@ header{
     color: red;
 }
 
-.title1
+header .title1
 {
-    color: red;
-    padding-top: 100px;
+    background-color: none;
+    position: absolute;
+    color: #000;
+    margin-top: -35%;
+    font-weight: 900;
+    font-size: 40px;
     
 }
 
 .navbar .menu{
+    background-color: #fefefe;
     display: none;
     position: absolute; 
     top: 50px;
@@ -73,27 +87,25 @@ header{
     }
 }
 
-.imageprincipale
-{
-    height: 100vh;
-    width: 100vw;
-    padding-top: 110px;
-   position: absolute;
-    z-index: 1 ;
-}
+
 
 .contenair2
 {
-    background-color: red;
+    position: relative;
+    color: #000;
+    width: 60%;
+    padding-left: 15%;
+    margin-top: -70px;
 }
 
 .para1
 {
-    width: 100px;
-    height: 50px;
+    background-color: #fefefe;
+   
 }
 .contenair
 {
+    padding: 15%;
     display: flex;
     align-content: space-between;
     position: relative;
